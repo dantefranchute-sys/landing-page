@@ -1,0 +1,33 @@
+.stats-bar {
+  background: #1a1a1a;
+  padding: 28px 0;
+  border-top: 3px solid #c0392b;
+}
+
+.stats {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.stat-number {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+  display: block;
+}
+
+.stat-label {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
+
+@media (max-width: 500px) {
+  .stats {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .stat { flex-basis: 40%; }
+  .stat-number { font-size: 26px; }
+}

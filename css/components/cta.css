@@ -1,0 +1,23 @@
+.section-cta {
+  background: #c0392b;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.cta-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.section-cta .btn {
+  background: white;
+  color: #c0392b;
+}
+
+.section-cta .btn:hover {
+  background: #f2f0ed;
+  color: #922b21;
+}

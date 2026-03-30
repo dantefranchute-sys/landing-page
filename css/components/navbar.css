@@ -1,0 +1,100 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: transparent;
+  padding: 0;
+}
+
+.navbar-top-line {
+  height: 3px;
+  background: #c0392b;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar-brand-mark {
+  width: 28px;
+  height: 28px;
+  background: #c0392b;
+  border-radius: 2px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 0px;
+  gap: 8px;
+}
+
+.navbar-links li a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #bbb;
+  padding: 8px 16px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+
+.navbar-links li a:hover {
+  color: white;
+  border-color: #555;
+}
+
+.navbar-links .navbar-link-cta a {
+  color: white;
+  border-color: #c0392b;
+  background: #3d1512;
+}
+
+.navbar-links .navbar-link-cta a:hover {
+  background: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 16px;
+  }
+  .navbar-links li a {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar .container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .navbar-links {
+    gap: 4px;
+  }
+}
